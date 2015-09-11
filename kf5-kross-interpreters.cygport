@@ -1,0 +1,20 @@
+inherit kf5 python
+
+NAME="kf5-kross-interpreters"
+VERSION=15.08.0
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="Scripting engines for KF5 Kross"
+
+SRC_URI="mirror://kde/stable/applications/${VERSION}/src/kross-interpreters-${VERSION}.tar.xz"
+SRC_DIR="kross-interpreters-${VERSION}"
+
+# ruby interface has yet to be ported
+PKG_NAMES="kf5-kross-python"
+kf5_kross_python_DOCS="COPYING"
+kf5_kross_python_CONTENTS="${QT5_PLUGINSDIR#/}/krosspython.dll"
+kf5_kross_ruby_DOCS="COPYING"
+kf5_kross_ruby_CONTENTS="${QT5_PLUGINSDIR#/}/krossruby.dll"
+
+CYGCMAKE_ARGS="-DBUILD_falcon=NO -DBUILD_java=NO"
+
