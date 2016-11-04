@@ -6,9 +6,6 @@ RELEASE=1
 CATEGORY="KDE"
 SUMMARY="Scripting engines for KF5 Kross"
 
-SRC_URI="mirror://kde/stable/applications/${VERSION}/src/kross-interpreters-${VERSION}.tar.xz"
-SRC_DIR="kross-interpreters-${VERSION}"
-
 PKG_NAMES="kf5-kross-python kf5-kross-ruby"
 kf5_kross_python_DOCS="COPYING"
 kf5_kross_python_CONTENTS="${QT5_PLUGINSDIR#/}/krosspython.dll"
