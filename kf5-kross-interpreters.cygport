@@ -2,7 +2,7 @@ inherit kf5 python
 
 NAME="kf5-kross-interpreters"
 VERSION=17.04.3
-RELEASE=1
+RELEASE=2
 CATEGORY="KDE"
 SUMMARY="Scripting engines for KF5 Kross"
 
