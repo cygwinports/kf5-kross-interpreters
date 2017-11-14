@@ -1,8 +1,8 @@
 inherit kf5 python
 
 NAME="kf5-kross-interpreters"
-VERSION=17.04.3
-RELEASE=2
+VERSION=17.08.3
+RELEASE=1
 CATEGORY="KDE"
 SUMMARY="Scripting engines for KF5 Kross"
 
@@ -11,6 +11,7 @@ kf5_kross_python_DOCS="COPYING"
 kf5_kross_python_CONTENTS="${QT5_PLUGINSDIR#/}/krosspython.dll"
 kf5_kross_ruby_DOCS="COPYING"
 kf5_kross_ruby_CONTENTS="${QT5_PLUGINSDIR#/}/krossruby.dll"
+PKG_IGNORE="usr/share/doc/${NAME}/"
 
 CYGCMAKE_ARGS="-DBUILD_falcon=NO -DBUILD_java=NO"
 
